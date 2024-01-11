@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+    padding: 0;    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-support{
+    background-color: black;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+hr{
+    width: 51rem;
+}
+
+.support-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+textarea{
+    resize: none;
+    background:transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+textarea::placeholder{
+    font-size: 20px;
+}
+
+textarea:focus{
+    outline-color: orange;
+}
+
+.input-name{
+    display: flex;
+    gap: 10px;
+}
+
+input{
+    background-color: black;
+    font-size: 20px;
+}
+
+.input-name .first-name input, .input-name .last-name input{
+    height: 15px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 11rem;
+}
+
+.name-wrapper, .email-wrapper, .topic-wrapper{
+    display: flex;
+}
+
+.star{
+    color: red;
+}
+
+.first-name p, .last-name p{
+    font-weight: 100;
+    color: grey;
+}
+
+.email input{
+    height: 15px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 24rem;
+    padding: 10px;
+}
+
+p{
+    font-size: 20px;
+}
+
+header{
+    margin-bottom: -3rem;
+}
+
+input:focus{
+    outline-color: orange;
+}
+
+.first-name p, .last-name p{
+    margin-top: 2px;
+}
+
+.name-wrapper p{
+    margin-bottom: 8px;
+}
+
+.email-wrapper p{
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+.topic-wrapper p{
+    margin-bottom: 8px;
+}
+
+.description-wrapper{
+    display: flex;
+    margin-bottom: -8px;
+}
+
+.optional{
+    color: grey;
+    font-size: 14px;
+}
+
+.btn-send{
+    display: flex;
+    margin-left: 16rem;
+    margin-top: 1rem;
+}
+
+.btn-send button{
+    background-color: orange;
+    padding: 0.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    width: 110px;
+}
+
+.btn-send button.disabled-btn {
+    background-color: grey !important;
+}
+
+.description input::placeholder {
+    text-align: left;
+    vertical-align: top;
+    line-height: 1;
+}
+
+input[type='radio'] {
+    accent-color: orange;
+    outline-color: white;
+    border-color: white;
+}
+
+.right-wrapper{
+    margin-top: 3.2rem;
+}
+.radio-wrapper{
+    background-color: black;
+    border: 2px dotted white;
+    border-radius: 5px;
+    width: 22.5rem;
+    padding: 10px 20px 25px 20px;
+    height: 7rem;
+}
+
+.radio-options{
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    gap: 5px;
+}
+
+.radio-options input{
+    width: 10px;
+    height: 10px;
+}
+
+.thank-you-message{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.thank-you-message h1{
+    color: orange;
+}
+
+.thank-you-message .ticket{
+    color: grey;
+}
+
+.ticket-wrapper{
+    display: flex;
+    justify-content: center;
+}

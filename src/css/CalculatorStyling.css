@@ -1,0 +1,141 @@
+.content-calculator{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+    background-color: white;
+}
+
+.container{
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: black;
+    grid-gap: 8px;
+}
+
+.screen{
+    grid-column: span 4;
+    background-color: #585657;    
+    width: 280px;
+    font-size: 50px;
+    display: flex;
+    padding: 8px;
+    color: white;
+    height: 130px;
+    justify-content: end;
+    align-items: end;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.history{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    max-height: calc(100% - 32px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.history::-webkit-scrollbar{
+    width: 0.5em;
+}
+
+.history::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+.history::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
+.history h3{
+    color: white;
+}
+
+.history ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history li{
+    font-size: 24px;
+    color: white;
+}
+
+.btn-grey, .btn-dark-orange, .btn-orange{
+    background-color: #a5a5a5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0px 0px 0px 10px;
+}
+
+.btn-big-orange, .btn-big-grey{
+    background-color: #a5a5a5;
+    border-radius: 300px;
+    padding: 10px;
+    width: 75%;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0px 0px 15px 10px;
+}
+
+.btn-dark-orange{
+    background-color: #866242;
+    color: white;
+}
+
+.btn-orange, .btn-big-orange{
+    background-color: #ff9800;
+    color: white;
+}
+
+.btn-grey:hover, .btn-dark-orange:hover, .btn-orange:hover, .btn-big-grey:hover, .btn-big-orange:hover{
+    background-color: #dddddd;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.btn-big-grey{
+    grid-column: span 2;
+}
+
+.btn-big-orange{
+    grid-column: span 2;
+}
+
+.btn-orange, .btn-dark-orange{
+    color: white;
+}
+
+.btn-dark-orange, .btn-orange, .btn-orange:hover, .btn-dark-orange:hover{
+    color: white;
+}
+
